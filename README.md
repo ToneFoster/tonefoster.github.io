@@ -31,9 +31,39 @@
       margin: 0.2em 0 1em 0;
     }
 
-    /* Responsive video container */
     .video-container {
       position: relative;
       width: 90%;
       max-width: 800px;
-      padding-bottom: 56.25%; /* 16:9 rat*
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      margin: 1em 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid white;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tone Foster</h1>
+  <h2>Video Editor</h2>
+
+  <div class="video-container">
+    <iframe src="https://player.vimeo.com/video/1151393208" frameborder="0" 
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>tone@fifteentoo.com</p>
+</body>
+</html>
