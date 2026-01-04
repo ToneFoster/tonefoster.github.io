@@ -36,12 +36,4 @@
       position: relative;
       width: 90%;
       max-width: 800px;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      margin: 1em 0;
-    }
-
-    .video-container video,
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+      padding-bottom: 56.25%; /* 16:9 rat*
