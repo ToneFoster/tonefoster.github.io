@@ -2,66 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tone Foster</title>
-
   <style>
-    body {
+    /* Remove any default spacing or borders */
+    html, body {
       margin: 0;
+      padding: 0;
+      border: 0;
       background: black;
+      height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
     }
 
+    /* Video container */
     .video {
-      width: 70vw;
-      max-width: 1100px;
+      width: 80vw;
+      max-width: 1200px;
       aspect-ratio: 16 / 9;
+      position: relative;
     }
 
+    /* Vimeo iframe */
     iframe {
       width: 100%;
       height: 100%;
       border: none;
+      outline: none;
+      display: block;
     }
 
+    /* Email link under the video */
     .email {
-      margin-top: 24px;
-      font-size: 14px;
-      color: white;
+      margin-top: 12px;
+      font-size: 13px;
+      z-index: 10;
+    }
+
+    .email a {
+      color: #aaa;
       text-decoration: none;
-      opacity: 0.8;
     }
 
-    .email:hover {
-      opacity: 1;
-    }
-
-    @media (max-width: 768px) {
-      .video {
-        width: 90vw;
-      }
+    .email a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
 
   <div class="video">
     <iframe
-      src="https://player.vimeo.com/video/1151393208?title=0&byline=0&portrait=0&badge=0"
+      src="https://player.vimeo.com/video/1151393208?title=0&byline=0&portrait=0&badge=0&autopause=0"
       allow="fullscreen; picture-in-picture"
       allowfullscreen>
     </iframe>
   </div>
 
-  <a class="email" href="mailto:tone@fifteentoo.com">
-    tone@fifteentoo.com
-  </a>
+  <div class="email">
+    <a href="mailto:tone@fifteentoo.com">tone@fifteentoo.com</a>
+  </div>
 
 </body>
 </html>
