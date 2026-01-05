@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tone Foster</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TONE FOSTER</title>
+
   <style>
     body {
       background-color: black;
       color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
+
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      text-align: center;
     }
 
     h1 {
-      font-weight: bold;
-      font-size: 3em;
-      margin: 0.2em 0;
+      font-size: 3.2em;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.08em;
     }
 
     h2 {
+      font-size: 1.2em; /* ~20% smaller */
       font-weight: 300;
-      font-size: 1.5em;
-      margin: 0.2em 0 1em 0;
+      margin: 0.6em 0 1.4em;
+      text-transform: lowercase;
     }
 
     .video-container {
-      position: relative;
-      width: 90%;
-      max-width: 800px;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      margin: 1em 0;
+      width: 95%;
+      max-width: 1040px; /* ~30% bigger */
+      aspect-ratio: 16 / 9;
+      margin-bottom: 1.4em;
     }
 
     .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      border: 2px solid white;
+      border: none;
     }
 
-    p {
+    a.email {
       font-size: 0.9em;
-      margin-top: 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    a.email:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
+
 <body>
-  <h1>Tone Foster</h1>
-  <h2>Video Editor</h2>
+
+  <h1>TONE FOSTER</h1>
+  <h2>video editor</h2>
 
   <div class="video-container">
-    <iframe src="https://player.vimeo.com/video/1151393208" frameborder="0" 
-      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    <iframe
+      src="https://player.vimeo.com/video/1151393208"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
     </iframe>
   </div>
 
-  <p>tone@fifteentoo.com</p>
+  <a class="email" href="mailto:tone@fifteentoo.com">
+    tone@fifteentoo.com
+  </a>
+
 </body>
 </html>
