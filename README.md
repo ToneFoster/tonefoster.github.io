@@ -7,46 +7,43 @@
 
   <style>
     body {
-      background-color: black;
       margin: 0;
-      min-height: 100vh;
-
+      background: black;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .video-container {
-      width: 80vw;
-      max-width: 1400px;
+    .video {
+      width: 70vw;
+      max-width: 1100px;
       aspect-ratio: 16 / 9;
-      margin-bottom: 1.5em;
     }
 
-    .video-container iframe {
+    iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
 
-    a.email {
+    .email {
+      margin-top: 24px;
+      font-size: 14px;
       color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1em;
       text-decoration: none;
-      opacity: 0.85;
+      opacity: 0.8;
     }
 
-    a.email:hover {
-      opacity: 0.6;
+    .email:hover {
+      opacity: 1;
     }
 
-    /* Mobile */
     @media (max-width: 768px) {
-      .video-container {
-        width: 95%;
+      .video {
+        width: 90vw;
       }
     }
   </style>
@@ -54,13 +51,12 @@
 
 <body>
 
-  <div class="video-container">
+  <div class="video">
     <iframe
-  src="https://player.vimeo.com/video/1151393208?title=0&byline=0&portrait=0&badge=0&autopause=0"
-  allow="autoplay; fullscreen; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
+      src="https://player.vimeo.com/video/1151393208?title=0&byline=0&portrait=0&badge=0"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <a class="email" href="mailto:tone@fifteentoo.com">
