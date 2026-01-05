@@ -56,10 +56,11 @@
 
   <div class="video-container">
     <iframe
-      src="https://player.vimeo.com/video/1151393208"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  src="https://player.vimeo.com/video/1151393208?title=0&byline=0&portrait=0&badge=0&autopause=0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
   </div>
 
   <a class="email" href="mailto:tone@fifteentoo.com">
